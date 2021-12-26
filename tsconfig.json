@@ -1,0 +1,24 @@
+{
+    "extends": "@tsconfig/svelte/tsconfig.json",
+    "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"],
+    "exclude": [
+        "node_modules/*",
+        "__sapper__/*",
+        "public/*"
+    ],
+    "compilerOptions": {
+        "target": "es2020",
+        "strict": true,
+        "strictPropertyInitialization": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "types": [
+            "node",
+            "svelte"
+        ],
+        // Hides exports flagged with @internal from the d.ts output
+        "stripInternal": true,
+        "typeRoots": ["./node_modules/@types"]
+    },
+
+}
