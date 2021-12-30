@@ -5,6 +5,10 @@ You must start json-server first for login post request.
 ## Get started
 
 ```bash
+npm install
+```
+
+```bash
 json-server ./src/mock-data.json --middlewares ./src/middleware.js
 ```
 
